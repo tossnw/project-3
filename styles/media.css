@@ -16,6 +16,29 @@
 	button {
 		padding: 10px 50px;
 	}
+
+	.journey__card {
+		width: 360px;
+	}
+
+	.journey__card-info__title {
+		font-size: 26px;
+	}
+
+	.journey__card-info p {
+		font-weight: 300;
+		font-size: 14px;
+	}
+
+	.content {
+		gap: 50px;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.journey__card {
+		width: 330px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -31,6 +54,23 @@
 
 	.header__section {
 		margin: 150px auto;
+	}
+
+	.content {
+		flex-flow: row wrap;
+	}
+
+	.journey__card {
+		flex: 1 100%;
+	}
+
+	.journey__card-info__title {
+		font-size: 22px;
+	}
+
+	.journey__card-info p {
+		font-weight: 300;
+		font-size: 12px;
 	}
 }
 
@@ -59,6 +99,15 @@
 		margin: 0 0 30px 0;
 	}
 
+	.showDesktop {
+		display: none;
+	}
+
+	.showMobile {
+		text-align: end;
+		margin-top: 30px;
+		display: block;
+	}
 
 }
 

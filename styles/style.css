@@ -9,11 +9,10 @@
 
 header {
 	width: 100%;
-	height: 100%;
 	background-image: url('../assets/images/desktop__header.png');
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	position: absolute;
 }
 
 .main__logo {
@@ -23,7 +22,8 @@ header {
 
 .header__navigation {
 	width: 90%;
-	margin: 20px auto;
+	margin: 0px auto;
+	padding: 20px 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -66,6 +66,99 @@ button {
 	border-radius: 20px;
 	padding: 15px 80px;
 	color: #fff;
-	background: linear-gradient(#0499DD,#17C1BC);
+	background: linear-gradient(#0499DD, #17C1BC);
 	border: none;
+}
+
+.conten-container {
+	width: 90%;
+	margin: 40px auto;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 80px;
+}
+
+.content__head {
+	margin: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content__head-title {
+	font-size: x-large;
+	color: #0499DD;
+}
+
+#seeAll {
+	text-decoration: underline;
+	font-size: small;
+	cursor: pointer;
+	user-select: none;
+}
+
+.journey__card {
+	width: 400px;
+	height: 600px;
+	padding: 40px 20px;	
+	background-image: url('../assets/images/bustour.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: end;
+	border-radius: 20px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.journey__card-info__title {
+	color: #FFC700;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+.journey__card-info__ditails {
+	width: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.journey__card-info__ditails-expences {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.journey__card-info__ditails-expences h3 {
+	margin: 0px 0 0 10px;
+	color: #fff;
+	font-weight: 300;
+	font-size: small;
+}
+
+.journey__card-info p {
+	color: #fff;
+	font-weight: 300;
+	font-size: small;
+	margin: 0 0 10px 0;
+}
+
+.button-secondary {
+	margin-top: 20px;
+	padding: 10px 60px;
+}
+
+.showMobile {
+	text-decoration: underline;
+	font-size: small;
+	cursor: pointer;
+	user-select: none;
+	display: none;
 }
