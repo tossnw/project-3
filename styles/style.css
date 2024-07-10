@@ -49,3 +49,23 @@ nav {
 .nav__link--active {
 	color: #FFC700;
 }
+
+.header__section {
+	width: 90%;
+	margin: 100px auto;
+}
+
+.header__section-title {
+	width: 50%;
+	font-size: 84px;
+	color: #fff;
+	margin: 0 0 50px 0;
+}
+
+button {
+	border-radius: 20px;
+	padding: 15px 80px;
+	color: #fff;
+	background: linear-gradient(#0499DD,#17C1BC);
+	border: none;
+}
