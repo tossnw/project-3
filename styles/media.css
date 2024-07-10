@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 480px) {
+	.header__navigation nav {
+		display: none;
+	}
+
+	.header__navigation-menuIsOpen {
+		display: block;
+	}
+
+	header {
+		background-image: url('../assets/images/mobile__header.png');
+	}
+
+	.nav__link {
+		display: block;
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+}
