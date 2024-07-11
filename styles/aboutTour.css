@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	width: 100%;
+	background-image: url('../assets/images/desktop__header.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.main__logo {
+	cursor: pointer;
+	user-select: none;
+}
+
+.header__navigation {
+	width: 90%;
+	margin: 0px auto;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__navigation-menuIsOpen {
+	display: none;
+}
+
+nav {
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__link {
+	font-size: small;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__link--active {
+	color: #FFC700;
+}
+
+.header__section {
+	width: 90%;
+	margin: 100px auto;
+}
+
+.header__section-title {
+	width: 60%;
+	font-size: 84px;
+	color: #fff;
+	margin: 0 0 50px 0;
+}
+
+button {
+	border-radius: 20px;
+	padding: 15px 80px;
+	color: #fff;
+	background: linear-gradient(#0499DD, #17C1BC);
+	border: none;
+}
+
+.adds {
+	color: #fff;
+	margin: 20px 0;
+	width: 60%;
+}

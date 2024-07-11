@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/media.css" />
-    <link rel="stylesheet" href="./styles/burgerMenu.css" />
-    <title>project #3</title>
-  </head>
-  <body>
-    <header>
-      <div class="header__navigation">
-        <img class="main__logo" src="./assets/icons/logo.svg" alt="" />
-        <nav>
-          <a class="nav__link nav__link--active" href="#">Главная</a>
-          <a class="nav__link" href="#">Экскурсии</a>
-        </nav>
-        <div class="header__navigation-menuIsOpen">
-          <div id="burger-menu">
-            <span></span>
-          </div>
 
-          <div id="menu">
-            <ul>
-              <li></li><a class="nav__link nav__link--active" href="#">Главная</a></li>
-              <li><a class="nav__link" href="#">Экскурсии</a></li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/media.css" />
+  <link rel="stylesheet" href="./styles/burgerMenu.css" />
+  <title>project #3</title>
+</head>
+
+<body>
+  <header>
+    <div class="header__navigation">
+      <img class="main__logo" src="./assets/icons/logo.svg" alt="" />
+      <nav>
+        <a class="nav__link nav__link--active" href="./index.html">Главная</a>
+        <a class="nav__link" href="./pages/aboutTour.html">Экскурсии</a>
+      </nav>
+      <div class="header__navigation-menuIsOpen">
+        <div id="burger-menu">
+          <span></span>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li></li><a class="nav__link nav__link--active" href="./index.html">Главная</a></li>
+            <li><a class="nav__link" href="./pages/aboutTour.html">Экскурсии</a></li>
+          </ul>
         </div>
       </div>
+    </div>
 
-	  <div class="header__section">
-		<h1 class="header__section-title">ПУТЕШЕСТВУЙ PERO TRAVEL</h1>
-		<button>К экскурсиям</button>
-	  </div>
-	</div>
+    <div class="header__section">
+      <h1 class="header__section-title">ПУТЕШЕСТВУЙ PERO TRAVEL</h1>
+      <a href="./pages/aboutTour.html">
+        <button>К экскурсиям</button>
+      </a>
+    </div>
+    </div>
+  </header>
 
-</header>
+  <div class="conten-container">
+    <div class="content__head">
+      <h1 class="content__head-title">Популярные экскурсии</h1>
+      <p id="seeAll" class="showDesktop">Смотреть все</p>
+    </div>
 
-	<div class="conten-container">
-
-
-		<div class="content__head">
-			<h1 class="content__head-title">Популярные экскурсии</h1>
-			<p id="seeAll" class="showDesktop">Смотреть все</p>
-		</div>
-
-		<div class="content"></div>
-		<p id="seeAllMobile" class="showMobile">Смотреть все</p>
-
-	
+    <div class="content"></div>
+    <p id="seeAllMobile" class="showMobile">Смотреть все</p>
 
     <script src="./scripts/script.js"></script>
-  </body>
+    <script src="./scripts/burgerMenu.js"></script>
+</body>
+
 </html>

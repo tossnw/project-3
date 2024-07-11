@@ -1,12 +1,7 @@
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("menu");
-let header = document.querySelector("header");
 const content = document.querySelector(".content");
 const seeAll = document.querySelector("#seeAll");
 const seeAllMobile = document.querySelector("#seeAllMobile");
-let winHeight = window.screen.height;
 let winWidth = window.screen.width;
-header.style.height = `${winHeight}px`;
 
 const arr = [
   {
@@ -76,7 +71,7 @@ const reload = (carts) => {
     let setTime = document.createElement("h3");
     let setPrice = document.createElement("h3");
     let pAbout = document.createElement("p");
-    let secBtn = document.createElement("button");
+    let toTour = document.createElement("a");
 
     journey__card.classList.add("journey__card");
     journey__cardInfo.classList.add("journey__card-info");
@@ -96,17 +91,18 @@ const reload = (carts) => {
     setTime.innerHTML =
       item.time >= 5 ? `${item.time} часов` : `${item.time} часа`;
     pAbout.innerHTML = item.about;
-    secBtn.classList.add("button-secondary");
-    secBtn.innerHTML = "Подробнее";
-    //   journey__card.style.backgroundImage = item.img;
     journey__card.style.backgroundImage = `url("${item.img}")`;
+    // toTour.href = `./pages/aboutTour.html?${item.id}`;
+    toTour.href = `./pages/aboutTour.html`;
+    toTour.classList.add("button-secondary");
+    toTour.innerHTML = "Подробнее";
 
     journey__cardInfo.append(
       pText,
       journey__cardInfo__title,
       journey__cardInfo__ditails,
       pAbout,
-      secBtn
+      toTour
     );
     journey__cardInfo__ditails.append(
       journey__cardInfo__ditailsExpencesOne,
@@ -115,7 +111,6 @@ const reload = (carts) => {
 
     journey__cardInfo__ditailsExpencesOne.append(imgClock, setTime);
     journey__cardInfo__ditailsExpencesTwo.append(imgCoin, setPrice);
-
     journey__card.append(journey__cardInfo);
     content.append(journey__card);
   }
@@ -146,8 +141,3 @@ if (winWidth >= 420) {
 } else {
   reload(arr.slice(0, 2));
 }
-
-burgerMenu.addEventListener("click", function () {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-});
